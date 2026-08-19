@@ -1,6 +1,7 @@
 ---
 name: Lucas Narloch Zabla
 title: Desenvolvedor Backend
+output: desenvolvedor_backend
 phone: +55 (41) 98719-8655
 email: lucasnarloch123@gmail.com
 location: Curitiba - PR, Brasil
@@ -25,14 +26,11 @@ Desenvolvedor Backend Pleno com experiência em ambientes de produção na AWS, 
 ### Estagiário Desenvolvedor Backend - SmartLy Fabricação de Dispositivos Inteligentes Ltda. | 09/2024 - Atual
 
 - Liderei consolidação de múltiplas funções serverless em uma API monolítica em FastAPI, reduzindo a complexidade operacional, centralizando regras de negócio e melhorando a manutenibilidade do sistema.
-- Desenvolvi endpoint para migração de dados entre dispositivos IoT, integrando MySQL, DynamoDB, S3 e AWS IoT Core via MQTT e suportando a migração de milhares de registros históricos por operação.
-- Implementei suíte de testes automatizados para APIs em FastAPI com pytest, incluindo 30 testes de integração com Testcontainers e 80 testes unitários, aumentando a confiabilidade das entregas e reduzindo o risco de regressões em produção.
-- Otimizei funções AWS Lambda em Python, reduzindo a média de erros a cada 5 minutos de 113 para 5 (95,6%) e aumentando significativamente a confiabilidade do sistema em produção.
-- Desenvolvi worker agendado por cron para atualização automática do horário do pôr do sol, persistindo mudanças no banco e enviando atualizações aos dispositivos via MQTT.
 - Introduzi processamento assíncrono com Amazon SQS para implementar comunicação orientada a eventos entre serviços, processando picos superiores a 40 mil notificações por dia e eliminando operações bloqueantes do fluxo principal das requisições.
-- Estruturei infraestrutura como código com Terraform do zero, substituindo gerenciamento manual no console da AWS por mudanças versionadas e criando ambiente de staging.
+- Implementei suíte de testes automatizados para APIs em FastAPI com pytest, incluindo 30 testes de integração com Testcontainers e 80 testes unitários, aumentando a confiabilidade das entregas e reduzindo o risco de regressões em produção.
+- Desenvolvi endpoint para migração de dados entre dispositivos IoT, integrando MySQL, DynamoDB, S3 e AWS IoT Core via MQTT e suportando a migração de milhares de registros históricos por operação.
+- Otimizei funções AWS Lambda em Python, reduzindo a média de erros a cada 5 minutos de 113 para 5 (95,6%) e aumentando significativamente a confiabilidade do sistema em produção.
 - Automatizei deploys com pipelines CI/CD no GitHub Actions e scripts Bash, reduzindo etapas manuais e riscos de configuração em produção.
-- Reduzi custos de infraestrutura em 20% por meio de análise de métricas no CloudWatch e remoção de recursos ociosos.
 
 ## Projetos
 
@@ -52,15 +50,6 @@ _Tecnologias: C, LLVM IR, NASM, Make, Linux syscalls, Compiler Design_
 
 [Código](https://github.com/LucasNarZ/PocScript)
 
-### PCBuilderBR
-
-Aplicação para seleção de componentes de computador com backend em FastAPI e PostgreSQL, expondo APIs REST para cálculo de preços e análise de compatibilidade entre CPU, placa-mãe, RAM, GPU, fonte, cooler e gabinete. Implementa um mecanismo de regras para validação de socket, chipset, DDR, TDP, conectores e dimensões, além de um worker diário para atualização automática de preços em múltiplos e-commerces.
-
-_Tecnologias: FastAPI, PostgreSQL, Docker, React, Vite, TailwindCSS, Axios_
-
-[Código](https://github.com/LucasNarZ/PCBuilderBR) | [Live demo](https://pcbuilderbr.com)
-
-
 ## Formação
 
 ### Bacharelado em Ciência da Computação - PUCPR | 02/2025 - 12/2028
@@ -77,4 +66,3 @@ Bolsista integral (100%). Formação com foco em algoritmos, estruturas de dados
 
 - **Português:** Nativo
 - **Inglês:** Proficiência profissional
-

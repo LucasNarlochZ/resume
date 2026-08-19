@@ -1,6 +1,7 @@
 ---
 name: Lucas Narloch Zabla
 title: Desenvolvedor Backend
+output: desenvolvedor_backend
 phone: +55 (41) 98719-8655
 email: lucasnarloch123@gmail.com
 location: Curitiba - PR, Brasil

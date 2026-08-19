@@ -1,4 +1,5 @@
 const fs = require("fs");
+const path = require("path");
 const { execSync } = require("child_process");
 const {
     Document, Packer, Paragraph, TextRun, AlignmentType, LevelFormat,
@@ -377,11 +378,24 @@ function buildBody(blocks) {
 }
 
 function main() {
-    const mdPath = process.argv[2] || "resume.md";
-    const outName = process.argv[3] || "resume";
+    const mdPath = process.argv[2];
+
+    if (!mdPath) {
+        throw new Error("Usage: node generate.js <path-to-resume.md>");
+    }
 
     const raw = fs.readFileSync(mdPath, "utf-8");
     const { fields, body } = parseFrontmatter(raw);
+    const outputName = fields.output;
+
+    if (!outputName) {
+        throw new Error("The resume frontmatter must define an output field.");
+    }
+
+    const outName = path.join(
+        path.dirname(mdPath),
+        `lucas_narloch_${outputName}`
+    );
     const blocks = parseBlocks(body);
 
     const doc = new Document({
@@ -447,11 +461,15 @@ function main() {
         fs.writeFileSync(docxPath, buffer);
 
         try {
-            execSync(`soffice --headless --convert-to pdf "${docxPath}"`, {
+            execSync(`soffice --headless --convert-to pdf --outdir "${path.dirname(docxPath)}" "${docxPath}"`, {
                 stdio: "inherit"
             });
         } catch (e) {
             console.error("Conversao para PDF falhou. Verifique se o LibreOffice (soffice) esta instalado.");
+        } finally {
+            if (fs.existsSync(docxPath)) {
+                fs.unlinkSync(docxPath);
+            }
         }
     });
 }

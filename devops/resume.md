@@ -1,6 +1,7 @@
 ---
 name: Lucas Narloch Zabla
 title: DevOps Engineer
+output: devops_engineer
 phone: +55 (41) 98719-8655
 email: lucasnarloch123@gmail.com
 location: Curitiba - PR, Brazil
