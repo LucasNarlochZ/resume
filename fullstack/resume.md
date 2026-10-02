@@ -5,9 +5,9 @@ output: desenvolvedor_full_stack
 phone: +55 (41) 98719-8655
 email: lucasnarloch123@gmail.com
 location: Curitiba - PR, Brasil
-link: GitHub | https://github.com/LucasNarZ
+link: GitHub | https://github.com/LucasNarlochZ
 link: LinkedIn | https://linkedin.com/in/lucasnarloch
-link: Portfolio | https://lucasnarz.github.io/Portfolio
+link: Portfolio | https://lucasnarlochz.github.io/Portfolio
 ---
 ## Resumo
 Desenvolvedor Full Stack com experiência ponta a ponta: APIs REST em produção, aplicações web com React/Next.js e infraestrutura própria na AWS. Combino solidez em backend (Node.js, Python, TypeScript) com produtos completos - do banco de dados à interface - incluindo dois projetos pessoais em produção com CI/CD, observabilidade e domínio próprio.

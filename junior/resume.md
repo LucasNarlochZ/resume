@@ -5,14 +5,14 @@ output: desenvolvedor_backend
 phone: +55 (41) 98719-8655
 email: lucasnarloch123@gmail.com
 location: Curitiba - PR, Brasil
-link: GitHub | https://github.com/LucasNarZ
+link: GitHub | https://github.com/LucasNarlochZ
 link: LinkedIn | https://linkedin.com/in/lucasnarloch
-link: Portfolio | https://lucasnarz.github.io/Portfolio
+link: Portfolio | https://lucasnarlochz.github.io/Portfolio
 ---
 
 ## Resumo
 
-Desenvolvedor Backend Júnior com experiência em ambientes de produção na AWS, atuando no desenvolvimento de APIs REST, sistemas distribuídos e integrações orientadas a eventos. Trabalho com Python, Node.js e TypeScript, com foco em qualidade de código, testes automatizados, automação de infraestrutura, pipelines CI/CD e observabilidade.
+Desenvolvedor Backend com experiência em ambientes de produção na AWS, atuando no desenvolvimento de APIs REST, sistemas distribuídos e integrações orientadas a eventos. Trabalho com Python, Node.js e TypeScript, com foco em qualidade de código, testes automatizados, automação de infraestrutura, pipelines CI/CD e observabilidade.
 
 ## Competências Técnicas
 

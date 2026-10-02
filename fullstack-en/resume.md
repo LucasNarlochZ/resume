@@ -12,7 +12,7 @@ link: Portfolio | https://lucasnarz.github.io/Portfolio
 
 ## Summary
 
-Junior Full Stack Developer with experience building REST APIs, production backend systems, and web applications using TypeScript, Node.js, Python, React, and Next.js. I have worked with AWS production environments, distributed systems, event-driven integrations, automated testing, CI/CD pipelines, infrastructure automation, and observability, with a focus on delivering reliable end-to-end software.
+Full Stack Developer with experience building REST APIs, production backend systems, and web applications using TypeScript, Node.js, Python, React, and Next.js. I have worked with AWS production environments, distributed systems, event-driven integrations, automated testing, CI/CD pipelines, infrastructure automation, and observability, with a focus on delivering reliable end-to-end software.
 
 ## Technical Skills
 

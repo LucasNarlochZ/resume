@@ -5,9 +5,9 @@ output: software_engineer
 phone: +55 (41) 98719-8655
 email: lucasnarloch123@gmail.com
 location: Curitiba - PR, Brazil
-link: GitHub | https://github.com/LucasNarZ
+link: GitHub | https://github.com/LucasNarlochZ
 link: LinkedIn | https://linkedin.com/in/lucasnarloch
-link: Portfolio | https://lucasnarz.github.io/Portfolio
+link: Portfolio | https://lucasnarlochz.github.io/Portfolio
 ---
 
 ## Summary
