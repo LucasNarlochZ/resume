@@ -5,9 +5,9 @@ output: software_engineer_backend_cloud
 phone: +55 (41) 98719-8655
 email: lucasnarloch123@gmail.com
 location: Curitiba - PR, Brazil
-link: GitHub | https://github.com/LucasNarZ
+link: GitHub | https://github.com/LucasNarlochZ
 link: LinkedIn | https://linkedin.com/in/lucasnarloch
-link: Portfolio | https://lucasnarz.github.io/Portfolio
+link: Portfolio | https://lucasnarlochz.github.io/Portfolio
 ---
 
 ## Summary
@@ -25,16 +25,18 @@ Computer Science student and Backend Developer with nearly two years of experien
 
 ## Experience
 
-### Backend Developer Intern - SmartLy Fabricação de Dispositivos Inteligentes Ltda. | 09/2024 - Present
+### Backend Developer - SmartLy Fabricação de Dispositivos Inteligentes Ltda. | 10/2026 - Present
 
-- Develop and operate Python backend services and REST APIs integrated with AWS, SQL and NoSQL databases, and IoT systems.
-- Diagnosed production failures using structured logs, metrics, and AWS CloudWatch, optimized Python Lambda workloads, and reduced errors from 113 to 5 per five-minute interval (95.6%).
-- Designed and implemented asynchronous, event-driven workflows with Amazon SQS, handling peaks above 40,000 notifications per day while decoupling background processing from latency-sensitive API requests.
+- Lead the consolidation of multiple AWS Lambda functions into a single FastAPI API organized into services and repositories, reducing deployment time from approximately 12 to 5 minutes and latency on several endpoints from 7–10 seconds to approximately 1.5 seconds (79–85%).
+- Redesigned AWS network architecture, replacing multiple VPC endpoints with a NAT Gateway and adding an EC2 bastion for database access, reducing monthly network costs by approximately 64% (US$90 to US$32) and expanding Lambda connectivity.
+- I am restructuring the MySQL schema of a production IoT platform, remodeling entities, relationships, and migration flows to better reflect the domain and preserve integrity and compatibility during transition.
+
+### Backend Developer Intern - SmartLy Fabricação de Dispositivos Inteligentes Ltda. | 10/2024 - 09/2026
+
 - Built an IoT data migration endpoint across MySQL, DynamoDB, S3, and IoT Core via MQTT, supporting thousands of historical records per operation.
-- Built 30 integration tests and 80 unit tests with pytest and Testcontainers, reducing production regression risk.
-- Contributed to consolidating AWS Lambda functions into a structured FastAPI application, centralizing business rules and reducing operational complexity.
-- Automated infrastructure, deployments, and environment configuration with Terraform, GitHub Actions, Docker, and Bash, reducing manual work and configuration risk.
-- Collaborate across backend, frontend, firmware, and product teams on architecture, observability, and production reliability.
+- Built 120 integration tests and 300 unit tests with pytest and Testcontainers, reducing production regression risk.
+- Analyzed Lambda error metrics in CloudWatch and fixed unhandled edge cases, reducing average errors from 113 to 5 per five-minute interval.
+- Introduced asynchronous, event-driven processing with Amazon SQS, handling peaks above 40,000 notifications per day and removing blocking operations from the main flow.
 
 ## Projects
 
@@ -44,7 +46,7 @@ Programming language and compiler implemented in C, covering lexical analysis, A
 
 _Technologies: C, LLVM IR, NASM, Make, Linux system calls, Compiler Design_
 
-[Code](https://github.com/LucasNarZ/PocScript)
+[Code](https://github.com/LucasNarlochZ/PocScript)
 
 ### Sunlog.dev
 
@@ -52,7 +54,7 @@ Production web platform with 33 REST endpoints, PostgreSQL, JWT authentication, 
 
 _Technologies: NestJS, TypeScript, PostgreSQL, Docker, AWS, GitHub Actions, Prometheus, Grafana_
 
-[Code](https://github.com/LucasNarZ/Sunlog.dev) | [Live demo](https://sunlog.dev)
+[Code](https://github.com/LucasNarlochZ/Sunlog.dev) | [Live demo](https://sunlog.dev)
 
 ## Education
 
@@ -60,9 +62,7 @@ _Technologies: NestJS, TypeScript, PostgreSQL, Docker, AWS, GitHub Actions, Prom
 
 Full scholarship recipient.
 
-**Relevant Coursework:** Data Structures & Algorithms, Object-Oriented Programming, Operating Systems, Computer Networks, Databases, Software Engineering
-
-### Technical High School Diploma in Electronics - CEEP | 02/2022 - 12/2024
+**Relevant Coursework:** Algorithms, OOP, operating systems, networks, databases, software engineering.
 
 ## Languages
 

@@ -23,14 +23,18 @@ Software Engineer with production experience building backend applications, REST
 
 ## Experience
 
-### Backend Developer Intern - SmartLy Fabricação de Dispositivos Inteligentes Ltda. | 09/2024 - Present
+### Backend Developer - SmartLy Fabricação de Dispositivos Inteligentes Ltda. | 10/2026 - Present
 
-- Led in the consolidation of multiple serverless functions into a FastAPI monolithic API, reducing operational complexity, centralizing business rules, and improving system maintainability.
-- Introduced asynchronous processing with Amazon SQS to implement event-driven communication between services, processing spikes above 40,000 notifications per day and eliminating blocking operations from the main request flow.
-- Implemented an automated test suite for FastAPI APIs with pytest, including 30 integration tests with Testcontainers and 80 unit tests, increasing delivery reliability and reducing the risk of production regressions.
+- Lead the consolidation of multiple AWS Lambda functions into a single FastAPI API organized into services and repositories, reducing deployment time from approximately 12 to 5 minutes and latency on several endpoints from 7–10 seconds to approximately 1.5 seconds (79–85%).
+- Redesigned AWS network architecture, replacing multiple VPC endpoints with a NAT Gateway and adding an EC2 bastion for database access, reducing monthly network costs by approximately 64% (US$90 to US$32) and expanding Lambda connectivity.
+- I am restructuring the MySQL schema of a production IoT platform, remodeling entities, relationships, and migration flows to better reflect the domain and preserve integrity and compatibility during transition.
+
+### Backend Developer Intern - SmartLy Fabricação de Dispositivos Inteligentes Ltda. | 10/2024 - 09/2026
+
+- Introduced asynchronous, event-driven processing with Amazon SQS, handling peaks above 40,000 notifications per day and removing blocking operations from the main flow.
 - Developed an endpoint for data migration between IoT devices, integrating MySQL, DynamoDB, S3, and AWS IoT Core through MQTT and supporting the migration of thousands of historical records per operation.
-- Optimized Python AWS Lambda functions, reducing the average number of errors every 5 minutes from 113 to 5 (95.6%) and significantly increasing production system reliability.
-- Automated deployments with CI/CD pipelines in GitHub Actions and Bash scripts, reducing manual steps and configuration risks in production.
+- Analyzed Lambda error metrics in CloudWatch and fixed unhandled edge cases, reducing average errors from 113 to 5 per five-minute interval.
+- Built an automated test suite for FastAPI APIs with pytest and Testcontainers, including 120 integration tests and 300 unit tests, improving delivery reliability and reducing production regression risk.
 
 ## Projects
 
@@ -42,7 +46,7 @@ The platform includes 33 HTTP endpoints, more than 100 automated tests, JWT-base
 
 _Technologies: NestJS, TypeScript, PostgreSQL, JWT, Docker, Nginx, AWS, GitHub Actions, Prometheus, Grafana, Next.js_
 
-[Code](https://github.com/LucasNarZ/Sunlog.dev) | [Live demo](https://sunlog.dev)
+[Code](https://github.com/LucasNarlochZ/Sunlog.dev) | [Live demo](https://sunlog.dev)
 
 ### PocScript
 
@@ -52,21 +56,15 @@ Includes a custom runtime based on Linux system calls, a static type system, sco
 
 _Technologies: C, LLVM IR, NASM, Make, Linux system calls, Compiler Design_
 
-[Code](https://github.com/LucasNarZ/PocScript)
+[Code](https://github.com/LucasNarlochZ/PocScript)
 
 ## Education
-
-### Bachelor of Computer Science - PUCPR | 02/2025 - 12/2028
-
-Full scholarship recipient. Coursework focused on algorithms, data structures, object-oriented programming, operating systems, computer networks, databases, and software engineering.
-
-### Technical High School Diploma in Electronics - CEEP | 02/2022 - 12/2024
-
-## Certifications
-
-- **Fundamentals of Database Engineering** - Hussein Nasser, Udemy | Sep/2025
 
 ## Languages
 
 - **Portuguese:** Native
 - **English:** Professional Working Proficiency
+
+### Bachelor of Computer Science - PUCPR | 02/2025 - 12/2028
+
+Full scholarship recipient. Coursework focused on algorithms, data structures, object-oriented programming, operating systems, computer networks, databases, and software engineering.

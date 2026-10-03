@@ -5,9 +5,9 @@ output: backend_python_fastapi
 phone: +55 (41) 98719-8655
 email: lucasnarloch123@gmail.com
 location: Curitiba - PR, Brazil
-link: GitHub | https://github.com/LucasNarZ
+link: GitHub | https://github.com/LucasNarlochZ
 link: LinkedIn | https://linkedin.com/in/lucasnarloch
-link: Portfolio | https://lucasnarz.github.io/Portfolio
+link: Portfolio | https://lucasnarlochz.github.io/Portfolio
 ---
 
 ## Summary
@@ -25,29 +25,27 @@ Backend Developer with production experience developing Python and FastAPI appli
 
 ## Experience
 
-### Backend Developer Intern - SmartLy Fabricação de Dispositivos Inteligentes Ltda. | 09/2024 - Present
+### Backend Developer - SmartLy Fabricação de Dispositivos Inteligentes Ltda. | 10/2026 - Present
 
-- Develop and maintain backend applications and RESTful APIs using Python and FastAPI in an AWS production environment.
-- Developed an endpoint for data migration between IoT devices, integrating MySQL, DynamoDB, S3, and AWS IoT Core via MQTT, supporting the migration of thousands of historical records per operation.
-- Implemented an automated test suite for FastAPI APIs with pytest, including 30 integration tests with Testcontainers and 80 unit tests, increasing delivery reliability and reducing the risk of production regressions.
-- Investigated production issues through structured logs, metrics, and AWS CloudWatch, optimizing Python Lambda functions and reducing the average number of errors every 5 minutes from 113 to 5 (95.6%).
-- Contributed to consolidating multiple serverless functions into a structured FastAPI application, reducing operational complexity, centralizing business rules, and improving system maintainability.
-- Created automation solutions and asynchronous workflows with Amazon SQS, processing peaks above 40,000 notifications per day and eliminating blocking operations from the main request flow.
-- Integrated backend services with relational databases, NoSQL databases, AWS services, IoT devices, and external authentication providers.
-- Worked with JWT, OAuth 2.0, OpenID Connect, and AWS Cognito to implement authentication, authorization, and account integration flows.
-- Automated deployments and environment configuration with GitHub Actions, Terraform, Bash scripts, and Docker, reducing manual steps and production configuration risks.
-- Participated in technical discussions involving API design, system architecture, event-driven communication, observability, deployment, and production reliability.
-- Collaborated with backend, frontend, firmware, and product teams to understand requirements and translate business needs into reliable technical solutions.
+- Lead the consolidation of multiple AWS Lambda functions into a single FastAPI API organized into services and repositories, reducing deployment time from approximately 12 to 5 minutes and latency on several endpoints from 7–10 seconds to approximately 1.5 seconds (79–85%).
+- Redesigned AWS network architecture, replacing multiple VPC endpoints with a NAT Gateway and adding an EC2 bastion for database access, reducing monthly network costs by approximately 64% (US$90 to US$32) and expanding Lambda connectivity.
+- I am restructuring the MySQL schema of a production IoT platform, remodeling entities, relationships, and migration flows to better reflect the domain and preserve integrity and compatibility during transition.
+
+### Backend Developer Intern - SmartLy Fabricação de Dispositivos Inteligentes Ltda. | 10/2024 - 09/2026
+
+- Developed an endpoint for data migration between IoT devices, integrating MySQL, DynamoDB, S3, and AWS IoT Core via MQTT, supporting thousands of historical records per operation.
+- Implemented an automated test suite for FastAPI APIs with pytest and Testcontainers, including 120 integration tests and 300 unit tests, improving delivery reliability and reducing production regressions.
+- Analyzed Lambda error metrics in CloudWatch and fixed unhandled edge cases, reducing average errors from 113 to 5 per five-minute interval.
 
 ## Projects
 
 ### Sunlog.dev
 
-Production devlog platform with an architecture based on REST APIs, PostgreSQL, JWT authentication, asynchronous processing, and automated AWS infrastructure. Includes a backend with 33 HTTP endpoints, over 100 automated tests, CI/CD with GitHub Actions, Docker containerization, Nginx reverse proxy, structured logging, and observability with Prometheus and Grafana.
+Production devlog platform with REST APIs, PostgreSQL, JWT, asynchronous processing, and automated AWS infrastructure. Includes 33 HTTP endpoints, 100+ tests, GitHub Actions CI/CD, Docker, Nginx, and Prometheus/Grafana observability.
 
 _Technologies: NestJS, TypeScript, PostgreSQL, JWT, Docker, Nginx, AWS, GitHub Actions, Prometheus, Grafana, Next.js_
 
-[Code](https://github.com/LucasNarZ/Sunlog.dev) | [Live demo](https://sunlog.dev)
+[Code](https://github.com/LucasNarlochZ/Sunlog.dev) | [Live demo](https://sunlog.dev)
 
 ### PocScript
 
@@ -55,21 +53,15 @@ Programming language and compiler implemented in C, covering the full compilatio
 
 _Technologies: C, LLVM IR, NASM, Make, Linux syscalls, Compiler Design_
 
-[Code](https://github.com/LucasNarZ/PocScript)
+[Code](https://github.com/LucasNarlochZ/PocScript)
 
 ## Education
 
 ### Bachelor of Computer Science - PUCPR | 02/2025 - 12/2028
 
-Full scholarship (100%). Coursework focused on algorithms, data structures, object-oriented programming, operating systems, computer networks, databases, and software engineering.
+Full scholarship (100%). Relevant coursework: algorithms, data structures, OOP, operating systems, networks, databases, and software engineering.
 
 ### Technical High School in Electronics - CEEP | 02/2022 - 12/2024
-
-Technical education focused on electronics, embedded systems, digital systems, automation, and programming.
-
-## Certifications
-
-- **Fundamentals of Database Engineering** - Hussein Nasser, Udemy | Sep/2025
 
 ## Languages
 

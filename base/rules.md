@@ -8,9 +8,8 @@ The files in `base/` are the complete English source of truth for Lucas Narloch 
 
 - Use only facts present in these source files.
 - Do not invent or exaggerate responsibilities, seniority, leadership, metrics, dates, technologies, proficiency, or project scope.
-- Preserve exact metrics when used: 95.6% error reduction, 113 to 5 errors per five-minute interval, more than 40,000 notifications per day, 80 integration tests, 150 unit tests, 33 HTTP endpoints, more than 100 Sunlog.dev tests, 196 PocScript tests, and 20% infrastructure cost reduction.
-- Describe the SmartLy position as an internship unless the source files are updated with a new title.
-- Use `09/2024 - Present` for the current SmartLy role.
+- Preserve exact metrics when used: deployment time from approximately 12 to 5 minutes, endpoint latency from 7–10 seconds to approximately 1.5 seconds (79–85%), approximately 64% monthly network-cost reduction (US$90 to US$32), 20% total AWS-cost reduction, 75% CloudWatch-spend reduction (US$120 to US$30 per month), more than 40,000 notifications per day, 120 integration tests, 300 unit tests, 113 to 5 Lambda errors per five-minute interval, 33 HTTP endpoints, more than 100 Sunlog.dev tests, and 196 PocScript tests.
+- Describe the SmartLy experience as two roles: `Backend Developer` from `10/2026 - Present` and `Backend Developer Intern` from `10/2024 - 09/2026`.
 
 ## Content Selection
 

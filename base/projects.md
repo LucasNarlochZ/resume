@@ -6,7 +6,7 @@ Production full stack devlog platform that helps developers document projects, t
 
 **Technologies:** Next.js, NestJS, TypeScript, PostgreSQL, JWT, REST APIs, Docker, Nginx, AWS, GitHub Actions, Prometheus, Grafana
 
-- **Code:** https://github.com/LucasNarZ/Sunlog.dev
+- **Code:** https://github.com/LucasNarlochZ/Sunlog.dev
 - **Live demo:** https://sunlog.dev
 
 ## PocScript
@@ -15,7 +15,7 @@ Programming language and compiler implemented in C, covering the complete compil
 
 **Technologies:** C, LLVM IR, NASM, Make, Linux system calls, Compiler Design
 
-- **Code:** https://github.com/LucasNarZ/PocScript
+- **Code:** https://github.com/LucasNarlochZ/PocScript
 
 ## PCBuilderBR
 
@@ -23,5 +23,5 @@ Full stack application for selecting computer components, with a React interface
 
 **Technologies:** React, Vite, Tailwind CSS, Axios, FastAPI, PostgreSQL, REST APIs, Docker
 
-- **Code:** https://github.com/LucasNarZ/PCBuilderBR
+- **Code:** https://github.com/LucasNarlochZ/PCBuilderBR
 - **Live demo:** https://pcbuilderbr.com

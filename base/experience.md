@@ -1,20 +1,22 @@
 # Experience
 
+## Backend Developer - SmartLy Fabricação de Dispositivos Inteligentes Ltda.
+
+**Period:** 10/2026 - Present
+
+- I lead the consolidation of multiple AWS Lambda functions into a single FastAPI API organized into services and repositories, reducing deployment time from approximately 12 to 5 minutes and latency on several endpoints from 7–10 seconds to approximately 1.5 seconds (79–85%).
+- I redesigned AWS network architecture, replacing multiple VPC endpoints with a NAT Gateway and adding an EC2 bastion for database access, reducing monthly network costs by approximately 64% (US$90 to US$32) and expanding Lambda connectivity.
+- I am restructuring the MySQL schema of a production IoT platform, remodeling entities, relationships, and migration flows to better reflect the domain and preserve integrity and compatibility during the transition.
+
 ## Backend Developer Intern - SmartLy Fabricação de Dispositivos Inteligentes Ltda.
 
-**Period:** 09/2024 - Present
+**Period:** 10/2024 - 09/2026
 
-- I developed and operated Python and FastAPI backend applications, REST APIs, internal tools, and automation solutions in an AWS production environment.
-- I designed and implemented an IoT data migration endpoint integrating MySQL, DynamoDB, Amazon S3, and AWS IoT Core through MQTT, supporting thousands of historical records per operation.
-- I built an automated FastAPI test suite with pytest and Testcontainers, including 80 integration tests and 150 unit tests, improving delivery reliability and reducing production regression risk.
-- I diagnosed production failures using structured logs, metrics, and Amazon CloudWatch, then optimized Python AWS Lambda workloads to reduce average errors from 113 to 5 per five-minute interval, a 95.6% reduction.
-- I developed a cron-scheduled worker that automatically updated sunset times, persisted changes in the database, and sent updates to IoT devices through MQTT.
-- I contributed to consolidating multiple serverless functions into a structured FastAPI application, centralizing business rules while reducing operational complexity and improving maintainability.
-- I designed and implemented asynchronous, event-driven workflows with Amazon SQS that processed peaks above 40,000 notifications per day and moved blocking work out of latency-sensitive request flows.
+- I reduced total AWS costs by 20% by cutting CloudWatch spend by 75% (US$120 to US$30 per month), identifying and disabling unused IoT Core logs.
+- I introduced asynchronous, event-driven processing with Amazon SQS, handling peaks above 40,000 notifications per day and removing blocking operations from the main flow.
 - I structured infrastructure as code with Terraform from scratch, replacing manual AWS Console management with versioned changes and creating a staging environment.
-- I automated deployments and environment configuration with GitHub Actions, Bash, Docker, and Terraform, reducing manual steps and production configuration risks.
-- I reduced infrastructure costs by 20% by analyzing CloudWatch metrics and removing idle resources.
-- I integrated backend services with relational and NoSQL databases, AWS services, IoT devices, corporate systems, and external platforms.
-- I implemented authentication, authorization, and account-integration flows using JWT, OAuth 2.0, OpenID Connect, and Amazon Cognito.
-- I participated in technical discussions about API design, system architecture, event-driven communication, observability, deployment, and production reliability.
-- I collaborated with backend, frontend, firmware, and product teams to understand requirements and translate business needs into reliable technical solutions.
+- I built an automated FastAPI test suite with pytest and Testcontainers, including 120 integration tests and 300 unit tests, improving delivery reliability and reducing regression risk.
+- I designed and implemented an IoT data migration endpoint integrating MySQL, DynamoDB, Amazon S3, and AWS IoT Core through MQTT, supporting thousands of historical records per operation.
+- I automated deployments with GitHub Actions CI/CD pipelines and Bash scripts, reducing manual steps and production configuration risks.
+- I participated in the first phase of consolidating multiple serverless functions into a FastAPI application, reducing operational complexity and centralizing business rules.
+- I analyzed Lambda error metrics in CloudWatch and fixed unhandled edge cases, reducing average errors from 113 to 5 per five-minute interval.

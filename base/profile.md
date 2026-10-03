@@ -6,9 +6,9 @@
 - **Phone:** +55 (41) 98719-8655
 - **Email:** lucasnarloch123@gmail.com
 - **Location:** Curitiba - PR, Brazil
-- **GitHub:** https://github.com/LucasNarZ
+- **GitHub:** https://github.com/LucasNarlochZ
 - **LinkedIn:** https://linkedin.com/in/lucasnarloch
-- **Portfolio:** https://lucasnarz.github.io/Portfolio
+- **Portfolio:** https://lucasnarlochz.github.io/Portfolio
 
 ## Languages
 

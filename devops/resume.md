@@ -5,9 +5,9 @@ output: devops_engineer
 phone: +55 (41) 98719-8655
 email: lucasnarloch123@gmail.com
 location: Curitiba - PR, Brazil
-link: GitHub | https://github.com/LucasNarZ
+link: GitHub | https://github.com/LucasNarlochZ
 link: LinkedIn | https://linkedin.com/in/lucasnarloch
-link: Portfolio | https://lucasnarz.github.io/Portfolio
+link: Portfolio | https://lucasnarlochz.github.io/Portfolio
 ---
 
 ## Summary
@@ -25,24 +25,28 @@ DevOps-focused backend developer with production experience in AWS, infrastructu
 
 ## Experience
 
-### Backend Developer Intern - SmartLy Fabricação de Dispositivos Inteligentes Ltda. | 09/2024 - Present
+### Backend Developer - SmartLy Fabricação de Dispositivos Inteligentes Ltda. | 10/2026 - Present
+
+- Lead the consolidation of multiple AWS Lambda functions into a single FastAPI API organized into services and repositories, reducing deployment time from approximately 12 to 5 minutes and latency on several endpoints from 7–10 seconds to approximately 1.5 seconds (79–85%).
+- Redesigned AWS network architecture, replacing multiple VPC endpoints with a NAT Gateway and adding an EC2 bastion for database access, reducing monthly network costs by approximately 64% (US$90 to US$32) and expanding Lambda connectivity.
+- I am restructuring the MySQL schema of a production IoT platform, remodeling entities, relationships, and migration flows to better reflect the domain and preserve integrity and compatibility during transition.
+
+### Backend Developer Intern - SmartLy Fabricação de Dispositivos Inteligentes Ltda. | 10/2024 - 09/2026
 
 - Structured infrastructure as code with Terraform from scratch, replacing manual management in the AWS Console with versioned changes and creating a staging environment.
 - Automated deployments with CI/CD pipelines in GitHub Actions and Bash scripts, reducing manual steps and configuration risks in production.
-- Reduced infrastructure costs by 20% through CloudWatch metrics analysis and removal of idle resources.
-- Optimized Python AWS Lambda functions, reducing the average number of errors every 5 minutes from 113 to 5 (95.6%) and significantly increasing production system reliability.
-- Participated in the consolidation of multiple serverless functions into a FastAPI monolithic API, reducing operational complexity, centralizing business rules, and improving system maintainability.
-- Introduced asynchronous processing with Amazon SQS to implement event-driven communication between services, processing spikes above 40,000 notifications per day and eliminating blocking operations from the main request flow.
+- Reduced total AWS costs by 20% by cutting CloudWatch spend by 75% (US$120 to US$30 per month), identifying and disabling unused IoT Core logs.
+- Analyzed Lambda error metrics in CloudWatch and fixed unhandled edge cases, reducing average errors from 113 to 5 per five-minute interval.
 
 ## Projects
 
 ### Sunlog.dev
 
-Production devlog platform built around REST APIs, PostgreSQL, and automated AWS infrastructure. Includes a backend with 33 HTTP endpoints, 100+ automated tests, CI/CD with GitHub Actions, Docker-based deployment, Nginx reverse proxy, and observability with Prometheus and Grafana.
+Production devlog platform with 33 REST endpoints, PostgreSQL, 100+ tests, GitHub Actions CI/CD, Docker, Nginx, and Prometheus/Grafana observability.
 
 _Technologies: NestJS, PostgreSQL, Docker, Nginx, AWS, GitHub Actions, Prometheus, Grafana, Next.js_
 
-[Code](https://github.com/LucasNarZ/Sunlog.dev) | [Live demo](https://sunlog.dev)
+[Code](https://github.com/LucasNarlochZ/Sunlog.dev) | [Live demo](https://sunlog.dev)
 
 ### PocScript
 
@@ -50,19 +54,15 @@ Programming language and compiler implemented in C, covering the full compilatio
 
 _Technologies: C, LLVM IR, NASM, Make, Linux syscalls, Compiler Design_
 
-[Code](https://github.com/LucasNarZ/PocScript)
+[Code](https://github.com/LucasNarlochZ/PocScript)
 
 ## Education
 
 ### Bachelor of Computer Science - PUCPR | 02/2025 - 12/2028
 
-Full scholarship. Coursework focused on algorithms, data structures, operating systems, computer networks, databases, and software engineering.
+Full scholarship. Coursework: algorithms, data structures, operating systems, networks, databases, and software engineering.
 
 ### Technical High School in Electronics - CEEP | 02/2022 - 12/2024
-
-## Certifications
-
-- **Fundamentals of Database Engineering** - Hussein Nasser, Udemy | Sep/2025
 
 ## Languages
 

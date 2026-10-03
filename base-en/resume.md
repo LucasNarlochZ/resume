@@ -5,9 +5,9 @@ output: backend_developer
 phone: +55 (41) 98719-8655
 email: lucasnarloch123@gmail.com
 location: Curitiba - PR, Brazil
-link: GitHub | https://github.com/LucasNarZ
+link: GitHub | https://github.com/LucasNarlochZ
 link: LinkedIn | https://linkedin.com/in/lucasnarloch
-link: Portfolio | https://lucasnarz.github.io/Portfolio
+link: Portfolio | https://lucasnarlochz.github.io/Portfolio
 ---
 
 ## Summary
@@ -23,17 +23,19 @@ Junior Backend Developer with experience in AWS production environments, working
 
 ## Experience
 
-### Backend Developer Intern - SmartLy Fabricação de Dispositivos Inteligentes Ltda. | 09/2024 - Present
+### Backend Developer - SmartLy Fabricação de Dispositivos Inteligentes Ltda. | 10/2026 - Present
 
-- Developed an endpoint for data migration between IoT devices, integrating MySQL, DynamoDB, S3, and AWS IoT Core through MQTT and supporting the migration of thousands of historical records per operation.
-- Implemented an automated test suite for FastAPI APIs with pytest, including 30 integration tests with Testcontainers and 80 unit tests, increasing delivery reliability and reducing the risk of production regressions.
-- Optimized Python AWS Lambda functions, reducing the average number of errors every 5 minutes from 113 to 5 (95.6%) and significantly increasing production system reliability.
-- Developed a cron-scheduled worker for automatic sunset time updates, persisting changes in the database and sending updates to devices through MQTT.
-- Participated in the consolidation of multiple serverless functions into a FastAPI monolithic API, reducing operational complexity, centralizing business rules, and improving system maintainability.
-- Introduced asynchronous processing with Amazon SQS to implement event-driven communication between services, processing spikes above 40,000 notifications per day and eliminating blocking operations from the main request flow.
-- Structured infrastructure as code with Terraform from scratch, replacing manual management in the AWS Console with versioned changes and creating a staging environment.
-- Automated deployments with CI/CD pipelines in GitHub Actions and Bash scripts, reducing manual steps and configuration risks in production.
-- Reduced infrastructure costs by 20% through CloudWatch metrics analysis and removal of idle resources.
+- Lead the consolidation of multiple AWS Lambda functions into a single FastAPI API organized into services and repositories, reducing deployment time from approximately 12 to 5 minutes and latency on several endpoints from 7–10 seconds to approximately 1.5 seconds (79–85%).
+- Redesigned AWS network architecture, replacing multiple VPC endpoints with a NAT Gateway and adding an EC2 bastion for database access, reducing monthly network costs by approximately 64% (US$90 to US$32) and expanding Lambda connectivity.
+- I am restructuring the MySQL schema of a production IoT platform, remodeling entities, relationships, and migration flows to better reflect the domain and preserve integrity and compatibility during transition.
+
+### Backend Developer Intern - SmartLy Fabricação de Dispositivos Inteligentes Ltda. | 10/2024 - 09/2026
+
+- Developed an endpoint for data migration between IoT devices, integrating MySQL, DynamoDB, S3, and AWS IoT Core through MQTT, supporting thousands of historical records per operation.
+- Built an automated test suite for FastAPI APIs with pytest and Testcontainers, including 120 integration tests and 300 unit tests, increasing delivery reliability and reducing production regression risk.
+- Participated in the first phase of consolidating multiple serverless functions into a FastAPI application, reducing operational complexity and centralizing business rules.
+- Introduced asynchronous, event-driven processing with Amazon SQS, handling peaks above 40,000 notifications per day and removing blocking operations from the main flow.
+- Analyzed Lambda error metrics in CloudWatch and fixed unhandled edge cases, reducing average errors from 113 to 5 per five-minute interval.
 
 ## Projects
 
@@ -43,7 +45,7 @@ Production devlog platform with an architecture based on REST APIs, PostgreSQL, 
 
 _Technologies: NestJS, PostgreSQL, Docker, Nginx, AWS, GitHub Actions, Prometheus, Grafana, Next.js_
 
-[Code](https://github.com/LucasNarZ/Sunlog.dev) | [Live demo](https://sunlog.dev)
+[Code](https://github.com/LucasNarlochZ/Sunlog.dev) | [Live demo](https://sunlog.dev)
 
 ### PocScript
 
@@ -51,16 +53,7 @@ Programming language and compiler implemented in C, covering the full compilatio
 
 _Technologies: C, LLVM IR, NASM, Make, Linux syscalls, Compiler Design_
 
-[Code](https://github.com/LucasNarZ/PocScript)
-
-### PCBuilderBR
-
-Application for selecting computer components with a FastAPI and PostgreSQL backend, exposing REST APIs for price calculation and compatibility analysis between CPU, motherboard, RAM, GPU, power supply, cooler, and case. Implements a rule engine for validating socket, chipset, DDR, TDP, connectors, and dimensions, as well as a daily worker for automatic price updates across multiple e-commerce stores.
-
-_Technologies: FastAPI, PostgreSQL, Docker, React, Vite, TailwindCSS, Axios_
-
-[Code](https://github.com/LucasNarZ/PCBuilderBR) | [Live demo](https://pcbuilderbr.com)
-
+[Code](https://github.com/LucasNarlochZ/PocScript)
 
 ## Education
 
@@ -70,11 +63,7 @@ Full scholarship (100%). Coursework focused on algorithms, data structures, oper
 
 ### Technical High School in Electronics - CEEP | 02/2022 - 12/2024
 
-## Certifications
-
-- **Fundamentals of Database Engineering** - Hussein Nasser, Udemy | Sep/2025
-
 ## Languages
 
 - **Portuguese:** Native
-- **English:** Professional proficiency
+- **English:** Professional Working Proficiency
