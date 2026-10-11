@@ -1,7 +1,7 @@
 ---
 name: Lucas Narloch Zabla
 title: Desenvolvedor Backend
-output: desenvolvedor_backend
+output: desenvolvedor_backend_nodejs
 phone: +55 (41) 98719-8655
 email: lucasnarloch123@gmail.com
 location: Curitiba - PR, Brasil
@@ -12,14 +12,15 @@ link: Portfolio | https://lucasnarlochz.github.io/Portfolio
 
 ## Resumo
 
-Desenvolvedor Backend Pleno com experiência em ambientes de produção na AWS, atuando no desenvolvimento de APIs REST, sistemas distribuídos e integrações orientadas a eventos. Trabalho com Python, Node.js e TypeScript, com foco em qualidade de código, testes automatizados, automação de infraestrutura, pipelines CI/CD e observabilidade.
+Sou Desenvolvedor Backend com dois anos de experiência em produção na AWS e experiência com Node.js e TypeScript em projetos. Tenho foco em otimizar APIs e arquiteturas serverless, apoiado por testes automatizados, CI/CD e sistemas orientados a eventos.
 
 ## Competências Técnicas
 
-- **Backend:** Node.js, TypeScript, Python, NestJS, FastAPI
+- **Backend:** Node.js, TypeScript, NestJS, APIs REST
+- **Backend adicional:** Python, FastAPI
 - **Bancos de Dados:** PostgreSQL, MySQL, DynamoDB
 - **Cloud & DevOps:** AWS Lambda, S3, SQS, EC2, RDS, IoT Core, CloudWatch, Terraform, GitHub Actions, Docker
-- **Frontend:** React, Next.js, TailwindCSS
+- **IA e Ferramentas de Desenvolvimento:** agentes de IA, Codex, Claude Code
 
 ## Experiência
 
@@ -32,12 +33,12 @@ Desenvolvedor Backend Pleno com experiência em ambientes de produção na AWS, 
 ### Estagiário Desenvolvedor Backend - SmartLy Fabricação de Dispositivos Inteligentes Ltda. | 10/2024 - 09/2026
 
 - Introduzi processamento assíncrono orientado a eventos com Amazon SQS, tratando picos acima de 40 mil notificações por dia e removendo operações bloqueantes do fluxo principal.
-- Implementei suíte automatizada de APIs FastAPI com pytest e Testcontainers, incluindo 120 testes de integração e 300 testes unitários.
-- Desenvolvi endpoint de migração entre dispositivos IoT, integrando MySQL, DynamoDB, S3 e AWS IoT Core via MQTT e suportando milhares de registros por operação.
+- Implementei suíte automatizada para APIs FastAPI com pytest e Testcontainers, incluindo 120 testes de integração e 300 testes unitários, aumentando a confiabilidade das entregas.
+- Desenvolvi endpoint para migração de dados entre dispositivos IoT, integrando MySQL, DynamoDB, S3 e AWS IoT Core via MQTT e suportando milhares de registros históricos por operação.
 - Analisei métricas de erros das Lambdas no CloudWatch e corrigi edge cases não tratados, reduzindo a média de 113 para 5 erros por intervalo de cinco minutos.
+- Automatizei deploys com pipelines CI/CD no GitHub Actions e scripts Bash, reduzindo etapas manuais e riscos de configuração em produção.
 
 ## Projetos
-
 ### Sunlog.dev
 
 Plataforma de devlogs em produção com arquitetura baseada em APIs REST, PostgreSQL e infraestrutura automatizada na AWS. Inclui backend com 33 endpoints HTTP, mais de 100 testes automatizados, CI/CD com GitHub Actions, containerização com Docker, reverse proxy com Nginx e observabilidade com Prometheus e Grafana.
@@ -46,13 +47,13 @@ _Tecnologias: NestJS, PostgreSQL, Docker, Nginx, AWS, GitHub Actions, Prometheus
 
 [Código](https://github.com/LucasNarlochZ/Sunlog.dev) | [Live demo](https://sunlog.dev)
 
-### PocScript
+### AgentIAM
 
-Linguagem de programação e compilador implementado em C, cobrindo todo o pipeline de compilação: análise léxica, parsing para AST, análise semântica, geração de IR própria, emissão de LLVM IR e geração de executáveis nativos. Inclui runtime próprio baseado em syscalls Linux, sistema de tipos, resolução de escopos, arrays, ponteiros e uma suíte com 196 testes unitários e de integração.
+Ferramenta CLI open source para gerenciar e aplicar políticas de segurança para agentes de codificação com IA. Permite definir quais operações agentes podem executar ao interagir com ferramentas como Git e GitHub CLI, aplicando regras de permissão configuráveis para evitar ações não autorizadas ou potencialmente destrutivas.
 
-_Tecnologias: C, LLVM IR, NASM, Make, Linux syscalls, Compiler Design_
+_Tecnologias: TypeScript, Node.js, desenvolvimento CLI, controle de acesso, agentes de IA, Git, GitHub CLI_
 
-[Código](https://github.com/LucasNarlochZ/PocScript)
+[Código](https://github.com/LucasNarZ/AgentIAM)
 
 ## Formação
 

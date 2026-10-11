@@ -12,7 +12,7 @@ link: Portfolio | https://lucasnarlochz.github.io/Portfolio
 
 ## Summary
 
-DevOps-focused backend developer with production experience in AWS, infrastructure automation, CI/CD pipelines, observability, and distributed systems. Hands-on with Python, TypeScript, FastAPI, Docker, Terraform, Linux, relational databases, and event-driven services, with a focus on making delivery safer, more reliable, and easier for development teams.
+I am a backend developer focused on DevOps with two years of production experience in AWS. I improve cloud reliability and cost efficiency through infrastructure automation, CI/CD, observability, and event-driven systems, using Python, Terraform, and Docker.
 
 ## Technical Skills
 

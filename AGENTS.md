@@ -9,20 +9,21 @@ Relevant files and directories:
 * `base/`: knowledge base and source of truth about the candidate.
 * `base/rules.md`: additional resume-generation rules. Always read it before generating resumes.
 * `seen.txt`: links of jobs that were already sent.
-* `query.txt`: LinkedIn search query.
-* `blacklist.txt`: companies that must never be included.
+* `whitelist.txt`: the only companies whose jobs may be considered.
 * `output/`: generated resume source files and final PDFs.
 
 ## Job Search Rules
 
 Search for roles compatible with the candidate's actual experience.
 
+Only consider jobs from companies listed in `whitelist.txt`. Read the list before searching. Treat its order as the search priority: start with the companies at the top and work downward, giving higher-listed companies first consideration. Continue through the list until 5 suitable new jobs have been found; if fewer than 5 are found, keep searching every remaining company through the end of the list. Exclude employers that are not on the list.
+
 Allowed locations:
 
 * On-site or hybrid roles in Curitiba, Paraná, Brazil.
 * Remote roles in Brazil.
 * International remote opportunities.
-* Search LinkedIn, Indeed, Programathor, Wellfound, GitHub/company career pages, and other relevant sources. Prefer the employer's own career page or ATS listing as the canonical application link; use aggregators to discover leads, not as the sole source when a primary listing is available. Do not rely on the discontinued GitHub Jobs board.
+* Prefer searches on the companies' own career sites and ATS pages (for example, Greenhouse, Lever, Workday, or Ashby). Serper is recommended for discovering openings, but optional. LinkedIn, Indeed, Programathor, Wellfound, and other sources may also be used. When both an aggregator and an official listing are available, prefer the official listing link. Do not rely on the discontinued GitHub Jobs board.
 
 Prefer junior and early-career backend/software engineering roles compatible with the experience documented in `base/`. Also consider mid-level roles when they do not require many years of experience or senior-level responsibilities, and internships at reputable companies when the role is compatible with the candidate's background.
 
@@ -30,20 +31,12 @@ Prefer junior and early-career backend/software engineering roles compatible wit
 
 Before selecting jobs:
 
-1. Read `seen.txt`.
-2. Read `blacklist.txt`.
-3. For LinkedIn, run the primary query and the targeted query variants from `query.txt`; do not substitute generic searches for the configured query.
-4. Search at least two other relevant sources in addition to LinkedIn. Use several focused searches rather than one broad query. Vary role wording (for example, Backend Developer, Backend Engineer, Software Engineer, Software Developer, and early-career/junior) and relevant candidate technologies. Search for Curitiba on-site/hybrid and Brazil/international remote separately.
-5. Treat search results as leads. Open each promising listing, preferably its direct employer/ATS page, and read the responsibilities and required qualifications. Verify that the job is active, its location/work eligibility is allowed, and its actual seniority and duties fit the candidate; title match alone is insufficient.
-6. Confirm the publication date from the listing or a reliable source that clearly identifies the same posting. Compare it with the current local date; reject postings older than 14 calendar days. If the date cannot be verified, do not select the job. Prefer more recent postings when fit is otherwise similar.
-7. Check `blacklist.txt` against the actual hiring company, case-insensitively and including obvious spelling/brand variants. Reject blacklisted employers even when an aggregator or staffing intermediary is the listing source.
-8. Deduplicate before selection. Ignore URL fragments and tracking parameters (such as `gh_src`, `utm_*`, and `jobBoardSource`) when comparing links; also compare stable posting IDs and the employer/title so the same job is not reintroduced under a different URL or aggregator.
-9. Keep a compact evidence list for the run: title, employer, canonical direct link, location, verified publication date/source, key fit evidence, and gaps. This makes ranking and email numbering traceable. Do not persist candidates to `seen.txt` at this stage.
-10. Rank only verified, compatible, new jobs by fit first and recency second. Select at most 5 jobs per execution.
-
-If a source fails, returns sparse results, or gives inconsistent dates, try another source or a narrower query and verify against the primary listing. Do not treat search snippets, stale cached pages, or aggregator “recently active” labels as proof of publication date. If no candidates survive verification, stop without generating resumes or sending an email.
-
-Do not include a job only because its title matches. Read enough of the job description to verify that it is reasonably compatible with the candidate's experience.
+1. Read `seen.txt` and `whitelist.txt`.
+2. Keep a run-local checklist in the whitelist's original order, with each company marked `pending`, `searched`, or `job found`. Do not skip companies. Search for suitable roles starting at the top of the list and proceed downward. Focus first on each company's career page or ATS; use Serper when useful, or another search source. Vary role terms as needed and consider the allowed locations.
+3. Mark a company `searched` after checking at least one relevant source for that employer. One credible listing is enough to consider a role; do not require a second source or confirmation on the company site/ATS before including it. A relevant aggregator or third-party listing may be used as the job link if no official listing is readily available.
+4. Make a practical, permissive fit assessment using the information available. Treat a role as suitable when its title and described work reasonably overlap with the candidate's skills or early-career experience in `base/`, and its location is allowed or plausibly compatible. Do not over-validate or exclude a plausible opening just because requirements, exact seniority, location details, publication date, or continued application availability are incomplete or cannot be independently confirmed. For example, consider Pipefy's Software Engineer | Data & AI (Mid-Level) and Agrotis's Desenvolvedor(a) Back End JR valid leads when listed as Brazil-remote/Curitiba respectively and their available descriptions reasonably match, even if only an aggregator reports them. Exclude a role only when available information clearly establishes that it is inactive, outside allowed locations, or materially incompatible with the candidate (such as explicit senior-level requirements well beyond the documented experience or a substantially unrelated role). If status is uncertain, retain the role and note the uncertainty as a concern rather than rejecting it.
+5. Check `seen.txt` and avoid sending the same opening again. Compare the employer and role as well as the URL when listings appear in multiple places.
+6. Stop searching only after 5 suitable new jobs have been found. If fewer than 5 have been found, continue until every company in `whitelist.txt` is marked `searched` or `job found`. Before reporting fewer than 5 jobs, confirm that no company remains `pending`. If no suitable openings are found after completing the list, stop without generating resumes or sending an email.
 
 ## Resume Rules
 
@@ -71,7 +64,7 @@ You may:
 * omit irrelevant content
 * adapt the professional summary to the role
 
-For professional-experience bullets, only use the 14 bullets already present in `base/`. Do not create, combine, or split bullets. Select the 6 bullets most relevant to the role and order them by relevance. Write every selected bullet in first-person past tense, adapting only its verb tense and language as necessary (for example, `Desenvolvi` or `Implementei`). This requirement overrides the experience-bullet tense and pronoun guidance in `base/rules.md`.
+For professional-experience bullets, only use the bullets already present in `base/experience.md`. Do not create, combine, or split bullets. Always include all 3 bullets from the candidate's current role and exactly 6 of the most relevant bullets from the internship. Use present tense for bullets under the current role and past tense for bullets under previous roles. In English resumes, omit the first-person pronoun `I` and start each bullet with an appropriate action verb (for example, `Build` or `Maintain` for current work; `Migrated` or `Implemented` for previous work). Adapt tense and language naturally without changing the supported facts. This requirement overrides conflicting experience-bullet tense and pronoun guidance in `base/rules.md`.
 
 Do not exaggerate proficiency or present academic, personal, or study experience as professional experience.
 
@@ -183,5 +176,3 @@ Never delete:
 
 * `base/`
 * `seen.txt`
-* `query.txt`
-* `blacklist.txt`

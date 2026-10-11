@@ -25,3 +25,11 @@ Full stack application for selecting computer components, with a React interface
 
 - **Code:** https://github.com/LucasNarlochZ/PCBuilderBR
 - **Live demo:** https://pcbuilderbr.com
+
+## AgentIAM
+
+Open-source CLI tool for managing and enforcing security policies for AI coding agents. It allows developers to define which operations agents are authorized to perform when interacting with development tools such as Git and GitHub CLI. By applying configurable permission rules, AgentIAM helps prevent unauthorized or potentially destructive actions, providing greater control over autonomous development workflows.
+
+**Technologies:** TypeScript, Node.js, CLI Development, Access Control, AI Agents, Git, GitHub CLI
+
+- **Code:** https://github.com/LucasNarZ/AgentIAM
